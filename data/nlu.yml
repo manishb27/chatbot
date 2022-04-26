@@ -98,3 +98,13 @@ nlu:
     - My name is [Vishnu](name)
     - Its [Namesh](name)
     - [manan](name)
+
+- intent: interest_list
+  examples: |
+    - I am interested in [Machine Learning](interests)
+    - I am interested in [Deep Leanring](interests) 
+    - I am interested in [AI](interests) and [Machine Learning](interests)
+    - [ML](interests) and [DL](interests)
+
+synonyms: 
+  
