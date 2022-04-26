@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - give_name
+  - interest_list
 
 responses:
   utter_greet:
@@ -32,6 +33,11 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_interest:
+  - text: "Please tell me about your interests in Data Science."
+
+
 
 entities:
   - destination
@@ -58,6 +64,8 @@ slots:
     - type: from_entity
       entity: interests
 
+actions: 
+- action_get_interest
     
 
 session_config:

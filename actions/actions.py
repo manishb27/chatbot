@@ -24,8 +24,9 @@ class ActionGetInterest(Action):
 
         # storing the list of interest extracted from user input
         interst_list =  next(tracker.get_latest_entity_value("interest"), None)
+        
 
-        msg = f'There are your interests? {', '.join(interst_list)}'
+        msg = f'There are your interests? {interst_list}'
 
         dispatcher.utter_message(text=msg)
 
