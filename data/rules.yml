@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: ask about interests when happy intent is triggered
+  steps:
+  - intent: interest_list
+  - action: action_get_interest  

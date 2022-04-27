@@ -7,7 +7,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
-  - action: utter_happy
+  - action: utter_ask_interest
+  - intent: interest_list
+  - action: action_get_interest
 
 - story: sad path 1
   steps:

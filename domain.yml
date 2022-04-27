@@ -8,8 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - give_name
-
+  - interest_list
+  
 responses:
   utter_greet:
   - text: "Hey {name}! How are you?"
@@ -33,18 +33,16 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_ask_interest:
+  - text: "what are you interested in Data Science?"  
+
 entities:
-  - destination
   - name
   - interests
 
+# defining slots to be used for storing entities
 slots:
-  destination: 
-    type: text
-    influence_conversation: true 
-    mappings: 
-    - type: from_entity
-      entity: destination
+  
   name:
     type: any
     mappings:
@@ -58,7 +56,8 @@ slots:
     - type: from_entity
       entity: interests
 
-    
+actions:
+  - action_get_interest
 
 session_config:
   session_expiration_time: 60

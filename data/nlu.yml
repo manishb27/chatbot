@@ -93,12 +93,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: give_name
-  examples: |
-    - My name is [Vishnu](name)
-    - Its [Namesh](name)
-    - [manan](name)
-
 - intent: interest_list
   examples: |
     - I am interested in [Machine Learning](interests)
@@ -106,5 +100,5 @@ nlu:
     - I am interested in [AI](interests) and [Machine Learning](interests)
     - [ML](interests) and [DL](interests)
 
-synonyms: 
+
   

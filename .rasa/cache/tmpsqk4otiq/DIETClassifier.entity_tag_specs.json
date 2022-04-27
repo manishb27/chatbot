@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-interests",
+      "2": "I-interests",
+      "3": "L-interests",
+      "4": "U-interests",
+      "5": "B-name",
+      "6": "I-name",
+      "7": "L-name",
+      "8": "U-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-interests": 1,
+      "I-interests": 2,
+      "L-interests": 3,
+      "U-interests": 4,
+      "B-name": 5,
+      "I-name": 6,
+      "L-name": 7,
+      "U-name": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
