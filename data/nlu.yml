@@ -99,6 +99,52 @@ nlu:
     - I am interested in [Deep Leanring](interests) 
     - I am interested in [AI](interests) and [Machine Learning](interests)
     - [ML](interests) and [DL](interests)
+    - I would like to see somehting in [ML](interests) and [DL](interests)
 
+- intent: tell_name_email
+  examples: |
+    - My name is [Mahesh Chaurasya](name) and email is [ramesh.ch@gmail.com](email)
+    - I am [mohit](name) and my email is [mmasdfh@ymail.com](email)
+    - [Sushil](name) [suhsd@formail.com](email)
+    
 
-  
+- synonym: Machine Learning
+  examples: |
+    - Machine Learning
+    - ML
+    - ml
+    - machine learning
+
+- synonym: Artificial Intelligence
+  examples: |
+    - ai
+    - artificial intelligence
+    - AI
+    - 
+- synonym: Deep Learning
+  examples: |
+    - Deep Leaning
+    - dl
+    - deep learning
+    - DL
+
+- synonym: Data Engineering
+  examples: |
+    - DE
+    - de
+    - data engineering
+
+- synonym: Data Visualization & Dash Boards
+  examples: |
+    - dash boards
+    - data Visualization
+    - Visualization
+
+- lookup: interests
+  examples: |
+    - Machine Learning
+    - Deep Learning
+    - Artificial Intelligence
+    - Data Visualization & Dash Boards
+    - Data Engineering
+

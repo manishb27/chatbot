@@ -9,7 +9,8 @@ intents:
   - mood_unhappy
   - bot_challenge
   - interest_list
-  
+  - tell_name_email
+
 responses:
   utter_greet:
   - text: "Hey {name}! How are you?"
@@ -36,9 +37,13 @@ responses:
   utter_ask_interest:
   - text: "what are you interested in Data Science?"  
 
+  utter_ask_name_email:
+  - text: "Can I get your Name and email please?" 
+
 entities:
   - name
   - interests
+  - email
 
 # defining slots to be used for storing entities
 slots:
@@ -55,6 +60,12 @@ slots:
     mappings: 
     - type: from_entity
       entity: interests
+
+  email:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: email
 
 actions:
   - action_get_interest

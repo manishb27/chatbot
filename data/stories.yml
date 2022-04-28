@@ -7,6 +7,8 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
+  - action: utter_ask_name_email
+  - intent: tell_name_email
   - action: utter_ask_interest
   - intent: interest_list
   - action: action_get_interest
