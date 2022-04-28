@@ -32,27 +32,27 @@ class ActionGetInterest(Action):
             for interest in interst_list:
                 
                 # priting machine learning message
-                if interest = Machine Learning:
+                if interest = 'Machine Learning':
                     msg = ML
                     dispatcher.utter_message(text=msg)
 
                 # pringint deep learning message
-                elif interest = Deep Learning:
+                elif interest = 'Deep Learning':
                     msg = DL
                     dispatcher.utter_message(text=msg)
 
                 #  printing Data engg message
-                elif interest = Data Engineering:
+                elif interest = 'Data Engineering':
                     msg = DE
                     dispatcher.utter_message(text=msg)
 
                 # printing dash board message
-                elif interest = Data Visualization & Dash Boards:
+                elif interest = 'Data Visualization & Dash Boards':
                     msg = DB
                     dispatcher.utter_message(text=msg)
 
                 # printing AI message
-                elif interest = Arificial Intelligence
+                elif interest = 'Arificial Intelligence'
                     msg = AI
                     dispatcher.utter_message(text=msg)
 
